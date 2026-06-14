@@ -1,6 +1,9 @@
-*.js
 !jest.config.js
-*.d.ts
+!src/**/index.js
+bin/*.js
+bin/*.d.ts
+lib/*.js
+lib/*.d.ts
 node_modules
 
 # CDK asset staging directory

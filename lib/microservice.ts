@@ -30,9 +30,6 @@ export class SwnMicroservices extends Construct {
   }
   private createProductFunction(productTable: ITable): NodejsFunction {
     const nodeJsFunctionProps: NodejsFunctionProps = {
-      bundling: {
-        externalModules: ["aws-sdk"],
-      },
       environment: {
         PRIMARY_KEY: "id",
         DYNAMODB_TABLE_NAME: productTable.tableName,
@@ -52,9 +49,6 @@ export class SwnMicroservices extends Construct {
   }
   private createBasketFunction(basketTable: ITable): NodejsFunction {
     const nodeJsFunctionProps: NodejsFunctionProps = {
-      bundling: {
-        externalModules: ["aws-sdk"],
-      },
       environment: {
         PRIMARY_KEY: "userName",
         DYNAMODB_TABLE_NAME: basketTable.tableName,
@@ -77,9 +71,6 @@ export class SwnMicroservices extends Construct {
   }
   private createOrderingFunction(orderTable: ITable): NodejsFunction {
     const nodeJsFunctionProps: NodejsFunctionProps = {
-      bundling: {
-        externalModules: ["aws-sdk"],
-      },
       environment: {
         PRIMARY_KEY: "userName",
         SORT_KEY: "orderDate",

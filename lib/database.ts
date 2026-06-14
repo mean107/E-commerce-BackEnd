@@ -60,7 +60,7 @@ export class SwnDatabase extends Construct {
     // order : PK : userName - SK : orderDate --totalPrice - firstName - lastName - email - address - paymentMethod - cardInfo
     const orderTable = new Table(this, "order", {
       partitionKey: {
-        name: "username",
+        name: "userName",
         type: AttributeType.STRING,
       },
       sortKey: {
