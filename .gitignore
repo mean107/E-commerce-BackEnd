@@ -1,12 +1,17 @@
-!jest.config.js
-!src/**/index.js
-bin/*.js
-bin/*.d.ts
-lib/*.js
-lib/*.d.ts
-node_modules
+**/target/
+.vscode/
+.idea/
+*.iml
+cdk.out/
+cdk-outputs.json
 
-# CDK asset staging directory
-.cdk.staging
-cdk.out
-.vscode
+# Local guides and assistant context are not published.
+.local-docs/
+AGENTS.md
+docs/INTERVIEW-DESIGN.md
+
+# Local credentials and environment configuration.
+.env
+.env.*
+!.env.example
+.aws/

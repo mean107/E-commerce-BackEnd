@@ -1,0 +1,8 @@
+[
+  {
+    "Source": "com.ecommerce.basket.checkout",
+    "DetailType": "CheckoutBasket",
+    "EventBusName": "ecommerce-dev-events",
+    "Detail": "{\"userName\":\"alice\",\"totalPrice\":100,\"basket\":{\"items\":[{\"productId\":\"demo\",\"quantity\":1}]}}"
+  }
+]
